@@ -13,17 +13,17 @@ WorkBuddy/
 ├── WorkBuddyBackend/    # Node.js backend
 └── README.md
 
-🚀 Getting Started
+# 🚀 Getting Started
 Prerequisites
 
 Make sure you have the following installed:
 Node.js (v16+ recommended)
 npm (comes with Node.js)
 
-🔐 Backend Setup
+# 🔐 Backend Setup
 Navigate to the backend folder:
 
-# cd WorkBuddyBackend
+cd WorkBuddyBackend
 
 1. Create a Mongodb Database and edit .env file adding the required variables:
   PORT=5000
@@ -35,10 +35,10 @@ Navigate to the backend folder:
   npm run dev
 (The backend will start in development mode.)
 
-🎨 Frontend Setup
+# 🎨 Frontend Setup
 
 Open a new terminal and navigate to the frontend folder:
-# cd WorkBuddyFrontend
+cd WorkBuddyFrontend
 
 Install dependencies and start the dev server:
 
