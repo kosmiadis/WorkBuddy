@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-tablet: 640px;
+    --breakpoint-laptop: 1024px;
+    --breakpoint-desktop: 1280px;
+
+    --color-accent: #2563EB;
+    --color-main-background: #eff4f9;
+    --color-secondary-background: #FFFFFF;
+    --color-main-font: #111827;
+    --color-highlight-font: #2563EB;
+    --color-link-font: #1D4ED8;
+    
+    /* Optional neutrals */
+    --color-border: #E5E7EB;
+    --color-muted-font: #6B7280;
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+
+    --default-font-family: 'Inter', sans-serif;
+    --font-roboto: 'Roboto Mono', monospace;
+}
+    
+.dark {
+    --color-accent: #3B82F6;
+    --color-main-background: #111827;
+    --color-secondary-background: #1F2937;
+    --color-main-font: #F9FAFB;
+    --color-highlight-font: #60A5FA;
+    --color-link-font: #93C5FD;
+    --color-border: #374151;
+    --color-muted-font: #9CA3AF;
+    --color-success: #34D399;
+    --color-warning: #FBBF24;
+    --color-error: #F87171;
+    }
+
+@layer components {
+    h1 {
+        @apply text-lg text-main-font
+    }
+    
+    h2, p {
+        @apply text-main-font;
+    }
+
+    h3 {
+        @apply text-muted-font;
+    }
+
+    button {
+        @apply text-sm text-white rounded-lg px-3 py-2
+    }
+
+    button:hover {
+        @apply cursor-pointer;
+    }
+
+    .btn-primary {
+        @apply bg-accent;
+    }
+
+    .btn-secondary {
+        @apply bg-accent/90;
+    }
+
+    .btn-error {
+        @apply bg-error ;
+    }
+
+    .btn-warning {
+        @apply bg-warning;
+    }
+
+    .btn-info {
+        @apply bg-stone-200 border-stone-600 text-black;
+    }
+
+    .link {
+        @apply text-sm text-main-font;
+    }
+
+    .rounded-border {
+        @apply border-1 border-border rounded-xl; 
+    }
+
+    .table {
+        @apply w-full;
+    }
+
+    .table_item {
+        
+    }
+}
+
+@layer base {
+    * {
+        @apply transition-colors duration-100 ease-in-out;
+    }
+}
+
+@keyframes flash {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}

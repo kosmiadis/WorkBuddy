@@ -1,0 +1,7 @@
+Check-in / Check-out button (single click toggles state)
+Display total hours for the selected period (month)
+Hourly wage input and monthly earnings calculation
+Work Log table (date, check-in, check-out, total hours) with ability to add/edit/delete a day
+Monthly summary card (hours, wage, earnings)
+Sidebar nav (Dashboard / Work Log / Settings)
+Light-mode professional dashboard layout
