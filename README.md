@@ -45,7 +45,7 @@ Install dependencies and start the dev server:
   npm install
   npm run dev
 
-🔁 Running the App
+# 🔁 Running the App
 
 1. Start WorkBuddyBackend (after .env setup)
 
@@ -54,6 +54,6 @@ Install dependencies and start the dev server:
 The frontend communicates with the backend API
 
 
-🛠️ Tech Stack
-# MERN STACK
+# 🛠️ Tech Stack
+MERN STACK
 MongoDB Express.js React.js Node.js
