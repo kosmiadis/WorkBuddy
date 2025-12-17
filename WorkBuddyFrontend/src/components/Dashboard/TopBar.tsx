@@ -14,7 +14,7 @@ export default function TopBar () {
     /* Check In / Out button is available only if time till check in is equal or less than 15 minutes */
     const checkInTimeDiffInMill = nextWorkSession ? new Date(nextWorkSession.scheduledCheckInDate).getTime() - new Date().getTime() : null;
     const differenceInMinutesTillWorkSession = checkInTimeDiffInMill ? Math.round(checkInTimeDiffInMill / (1000 * 60)) : null;
-    console.log(differenceInMinutesTillWorkSession)
+
     return <div className="w-full flex items-center gap-4 flex-wrap justify-between">
         <div className="flex flex-col gap-2 justify-between w-full h-full">
             <div>
